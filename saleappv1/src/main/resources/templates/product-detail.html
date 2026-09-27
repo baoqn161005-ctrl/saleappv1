@@ -1,0 +1,39 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <style>
+        .container { display: flex; gap: 30px; margin-top: 20px; max-width: 800px; }
+        .product-image img { max-width: 300px; border-radius: 8px; border: 1px solid #ddd; }
+        .product-info { display: flex; flex-direction: column; justify-content: center; }
+        .price { color: red; font-size: 20px; font-weight: bold; }
+        .category { background-color: #f0f0f0; padding: 5px 10px; border-radius: 4px; display: inline-block; width: fit-content; }
+    </style>
+</head>
+<body>
+    <a th:href="@{/products}"> Quay lại danh sách sản phẩm</a>
+
+    <div class="container" th:if="${product != null}">
+        <!-- 1. Hình ảnh sản phẩm -->
+        <div class="product-image">
+            <img th:src="${product.image}" th:alt="${product.name}" />
+        </div>
+
+        <div class="product-info">
+            <!-- 2. Tên sản phẩm -->
+            <h1 th:text="${product.name}">Tên sản phẩm</h1>
+
+            <!-- 5. Danh mục sản phẩm -->
+            <p class="category">Mã danh mục: <strong th:text="${product.categoryId}">1</strong></p>
+
+            <!-- 4. Giá -->
+            <p class="price" th:text="${#numbers.formatDecimal(product.price, 0, 'COMMA', 0, 'POINT')} + ' VNĐ'">Giá sản phẩm</p>
+
+            <!-- 3. Mô tả -->
+            <h3>Mô tả sản phẩm:</h3>
+            <p th:text="${product.description}">Mô tả chi tiết sản phẩm ở đây.</p>
+        </div>
+    </div>
+</body>
+</html>

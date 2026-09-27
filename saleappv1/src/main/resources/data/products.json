@@ -1,0 +1,26 @@
+[
+    {
+    "id": 1,
+    "name": "iPhone 15 Pro",
+    "description": "Điện thoại Apple iPhone 15 Pro 128GB",
+    "price": 25990000.0,
+    "image": "https://24hstore.vn/images/products/2024/08/07/original/iphone-15-pro-128gb-natural-titanium_1723015714.jpg",
+    "categoryId": 1
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24",
+    "description": "Điện thoại Samsung Galaxy S24 Ultra",
+    "price": 29990000.0,
+    "image": "https://viostore.vn/wp-content/uploads/2024/09/1-7.png.webp",
+    "categoryId": 1
+  },
+  {
+    "id": 3,
+    "name": "iPad Air 5",
+    "description": "Máy tính bảng iPad Air 5 Wi-Fi 64GB",
+    "price": 14990000.0,
+    "image": "https://bizweb.dktcdn.net/thumb/large/100/401/951/products/air-5-2-01aa98db-e222-43f6-95a1-2b6d6aded67f.png?v=1749148305590",
+    "categoryId": 2
+  }
+]

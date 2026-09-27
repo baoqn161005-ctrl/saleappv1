@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Bán Hàng Trực Tuyến</title>
+</head>
+<body>
+    <h1>BÁN HÀNG TRỰC TUYẾN</h1>
+    <ul>
+        <li><a th:href="@{/products}">Tất cả</a></li>
+        <li><a th:href="@{/products(categoryId=1)}">Điện thoại di động</a></li>
+        <li><a th:href="@{/products(categoryId=2)}">Máy tính bảng</a></li>
+    </ul>
+</body>
+</html>
